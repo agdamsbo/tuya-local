@@ -26,10 +26,13 @@ entities:
             value: normal
           - dps_val: Laundrydrying
             value: laundry
+            icon: "mdi:tshirt-crew-outline"
           - dps_val: Sleeping
             value: sleep
+            icon: "mdi:weather-night"
           - dps_val: Purifying
             value: purify
+            icon: "mdi:air-purifier"
       - id: 6
         name: current_humidity
         type: integer
@@ -47,6 +50,7 @@ entities:
       - id: 19
         type: bitfield
         name: sensor
+        icon: "mdi:water-alert"
         optional: true
         mapping:
           - dps_val: 4
@@ -59,6 +63,7 @@ entities:
       - id: 19
         type: bitfield
         name: sensor
+        icon: "mdi:snowflake-alert"
         optional: true
         mapping:
           - dps_val: 8
@@ -98,12 +103,13 @@ entities:
           - dps_val: 8
             value: Defrosting
   - entity: switch
-    translation_key: ionizer
+    translation_key: anion
     category: config
     dps:
       - id: 10
         type: boolean
         name: switch
+        icon: "mdi:transition-masked"
   - entity: switch
     translation_key: uv
     category: config
@@ -111,6 +117,7 @@ entities:
       - id: 13
         type: boolean
         name: switch
+        icon: "mdi:sun-wireless"
   - entity: lock
     translation_key: child_lock
     category: config
@@ -118,6 +125,7 @@ entities:
       - id: 16
         type: boolean
         name: lock
+        icon: "mdi:lock-alert-outline"
         optional: true
   - entity: select
     translation_key: timer
