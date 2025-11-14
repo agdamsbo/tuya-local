@@ -1,4 +1,8 @@
 name: Dehumidifier
+products:
+  - id: aishyujfuvw3gvha
+    manufacturer: eeese
+    model: Alma
 entities:
   - entity: humidifier
     class: dehumidifier
@@ -115,19 +119,6 @@ entities:
         type: boolean
         name: lock
         optional: true
-  - entity: select
-    name: Fan speed
-    icon: "mdi:fan"
-    category: config
-    dps:
-      - id: 4
-        type: string
-        name: option
-        mapping:
-          - dps_val: low
-            value: Low
-          - dps_val: high
-            value: High
   - entity: select
     translation_key: timer
     category: config
