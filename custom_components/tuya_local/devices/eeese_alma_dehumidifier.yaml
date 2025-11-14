@@ -10,7 +10,7 @@ entities:
         name: humidity
         type: integer
         range:
-          min: 30
+          min: 25
           max: 80
         mapping:
           - step: 5
@@ -20,8 +20,6 @@ entities:
         mapping:
           - dps_val: Manual
             value: normal
-          - dps_val: Auto
-            value: auto
           - dps_val: Laundrydrying
             value: laundry
           - dps_val: Sleeping
@@ -31,6 +29,13 @@ entities:
       - id: 6
         name: current_humidity
         type: integer
+  - entity: sensor
+    translation_key: current_temperature
+    category: sensors
+    dps:
+      - id: 7
+        type: integer
+        name: sensor
   - entity: binary_sensor
     translation_key: tank_full
     category: diagnostic
