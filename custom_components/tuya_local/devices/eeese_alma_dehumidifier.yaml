@@ -22,16 +22,16 @@ entities:
         name: mode
         type: string
         mapping:
-          - dps_val: Manual
-            value: normal
-          - dps_val: Laundrydrying
-            value: laundry
+          - dps_val: manual
+            value: manual
+          - dps_val: laundrydrying
+            value: laundrydrying
             icon: "mdi:tshirt-crew-outline"
-          - dps_val: Sleeping
-            value: sleep
+          - dps_val: sleeping
+            value: sleeping
             icon: "mdi:weather-night"
-          - dps_val: Purifying
-            value: purify
+          - dps_val: purify
+            value: purifying
             icon: "mdi:air-purifier"
       - id: 6
         name: current_humidity
